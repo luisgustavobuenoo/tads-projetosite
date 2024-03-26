@@ -1,0 +1,121 @@
+
+/* css reser */
+*{
+    /* retirar a margem externa */
+    margin: 0;
+    /* retirar a margem interna */
+    padding: 0;
+}
+header {
+    /* cor de fundo */
+    background-color: white;
+    /* lagura */
+    width: 100%;
+    /* sombra */
+    box-shadow: 30px 30px 40px #ccc ;
+}
+
+/* formatar a class chamada centro */
+.centro{
+    /* tamanho - lagura */
+    width: 1000px;
+    /* centralizar */
+    margin: auto;
+}
+/* formatar corpo */
+body{
+    font-family: arial, verdana;
+    font-size: 16px;
+}
+h2{
+    /* centralizar */
+    text-align: center;
+    /* maiusculo */
+    text-transform: uppercase;
+    /* tamanho da fonte */
+    font-size: 32px;
+}
+/* configuras o id mentores */
+#zumbies{ #contato
+    background-color: #F1F1F1;
+
+}
+section{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.grid{
+    /* aplicar a grid */
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+.grid .coluna{
+    /* sombra */
+    box-shadow: 0 0 10px;
+    /* borda arredondada */
+    border-radius: 10px;
+    /* margin externa */
+    margin: 10px;
+}
+.grid .coluna img{
+    /* largura */
+    width: 100%;
+    /* arredondar cantos */
+    border-radius: 10px 10px 0 0;
+}
+.grid .coluna p,#zumbies p{
+    margin: 15px;
+    /* alinhar ao centro */
+    text-align: center;
+}
+
+input, textarea {
+    /* largura */
+    width: 100%;
+    /* borda */
+    border: 1px solid #ccc;
+    /* margem interna */
+    padding: 10px;
+    /* retirar os 20px dos 100% do width */
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+footer {
+	background-color: white;
+	color: black;
+    width: 98%;
+	padding: 0%;
+	text-align:center;
+    box-shadow: 90px 90px 130px #8d8d8d ;
+	margin-top: 8px;
+}
+
+#menu ul { padding:0px;
+    margin:0px;
+    background-color:white;
+    list-style:none;
+    text-align: center;
+  }
+
+  #menu ul li { display: inline; }
+
+  #menu ul li a { 
+    padding: 8px 40px; 
+    display: inline-block; /* visual do link */ 
+    background-color:white; 
+    color: #333; 
+    text-decoration: none; 
+    border-bottom:3px solid #EDEDED;
+    text-align: center; 
+    box-shadow:  #b5b4b4 ;
+    border-radius: 20px;
+}
+
+#menu ul li a:hover { 
+    background-color:#D6D6D6;
+    color: #6D6D6D;
+    border-bottom:3px solid #1de688;
+    text-align: center;
+    box-shadow: 10px 10px 30px;
+  }

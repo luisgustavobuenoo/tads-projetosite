@@ -8,11 +8,14 @@
 }
 header {
     /* cor de fundo */
-    background-color: white;
+    background-color: #33333300;
     /* lagura */
     width: 100%;
     /* sombra */
-    box-shadow: 30px 30px 40px #ccc ;
+    display: flex;
+    align-items: center;   
+    gap: 410px; 
+    transition: 400ms;
 }
 
 /* formatar a class chamada centro */
@@ -35,11 +38,7 @@ h2{
     /* tamanho da fonte */
     font-size: 32px;
 }
-/* configuras o id mentores */
-#zumbies{ #contato
-    background-color: #F1F1F1;
 
-}
 section{
     padding-top: 50px;
     padding-bottom: 50px;
@@ -62,6 +61,7 @@ section{
     width: 100%;
     /* arredondar cantos */
     border-radius: 10px 10px 0 0;
+
 }
 .grid .coluna p,#zumbies p{
     margin: 15px;
@@ -69,31 +69,20 @@ section{
     text-align: center;
 }
 
-input, textarea {
-    /* largura */
-    width: 100%;
-    /* borda */
-    border: 1px solid #ccc;
-    /* margem interna */
-    padding: 10px;
-    /* retirar os 20px dos 100% do width */
-    box-sizing: border-box;
-    margin-bottom: 10px;
-}
-
 footer {
-	background-color: white;
-	color: black;
-    width: 98%;
+	background-color: black;
+	color: #fff;
+    width: 99,5%;
 	padding: 0%;
 	text-align:center;
-    box-shadow: 90px 90px 130px #8d8d8d ;
-	margin-top: 8px;
+	margin-top: 9px;
+    padding: 12px;
 }
 
-#menu ul { padding:0px;
+#menu ul { 
+    padding: 10px;
     margin:0px;
-    background-color:white;
+    background-color:#33333300;
     list-style:none;
     text-align: center;
   }
@@ -103,19 +92,64 @@ footer {
   #menu ul li a { 
     padding: 8px 40px; 
     display: inline-block; /* visual do link */ 
-    background-color:white; 
-    color: #333; 
+    background-color:#33333300; 
+    color: #9b9b9b; 
     text-decoration: none; 
-    border-bottom:3px solid #EDEDED;
+    border-bottom:3px solid #b0b0b0;
     text-align: center; 
     box-shadow:  #b5b4b4 ;
-    border-radius: 20px;
+    border-radius: 40px;
 }
 
 #menu ul li a:hover { 
-    background-color:#D6D6D6;
-    color: #6D6D6D;
-    border-bottom:3px solid #1de688;
+    background-color: #333;
+    border-bottom:3px solid rgb(58, 255, 248);
     text-align: center;
     box-shadow: 10px 10px 30px;
+    transition: 350ms;
+    scale: 1.01;
+}
+
+body {
+    background-image: url("https://cdn.pixabay.com/photo/2021/09/30/15/33/dystopia-6670405_1280.jpg")
+}
+
+h2 {
+    color: #ffffff;
+}
+
+p {
+    color: #949494;
+}
+
+strong {
+    color: #979797;
+}
+
+h4 {
+    color: #ffffff;
+}
+
+
+  header img {
+    width: 45px;
   }
+
+
+body main {
+        height: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+#video {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    align-items: center;
+    border-radius: 40px;
+    box-shadow:  #b5b4b4 ;
+}
+

@@ -109,25 +109,27 @@ footer {
     transition: 350ms;
     scale: 1.01;
 }
-
 body {
-    background-image: url("https://cdn.pixabay.com/photo/2021/09/30/15/33/dystopia-6670405_1280.jpg")
+    background-image: url("https://cdn.pixabay.com/photo/2021/09/30/15/33/dystopia-6670405_1280.jpg");
+    background-size: 110vw 165vh; /* Define a largura e altura da imagem em relação à largura e altura da janela de visualização */
+    background-repeat: no-repeat; /* Evita a repetição da imagem */
 }
+
 
 h2 {
     color: #ffffff;
 }
 
 p {
-    color: #949494;
+    color: #fffefe;
 }
 
 strong {
-    color: #979797;
+    color: #ffffff;
 }
 
 h4 {
-    color: #ffffff;
+    color: #cdcdcd;
 }
 
 
@@ -153,3 +155,57 @@ body main {
     box-shadow:  #b5b4b4 ;
 }
 
+/* explicação do jogo na pagina sobre- incluindo h3 para personalização maior  */
+.apresenta h3 {
+    text-align: center;
+    justify-content: center;
+    padding-top: 0%;
+    color: #ffffff;
+}
+
+
+.quems h3 {
+    text-align: center;
+    justify-content: center;
+    padding-top: 0%;
+    color: #ffffff;
+}
+.tilt h4 {
+    text-align: center;
+    justify-content: center;
+    padding-top: 0%;
+    color: #ffffff;
+}
+
+
+/* media para responsividade do site  */
+
+@media only screen and (max-width: 414px) {
+
+    header {
+        /* cor de fundo */
+        background-color: #33333300;
+        /* lagura */
+        width: 30%;
+        /* sombra */
+        display: flex;
+        align-items: center;   
+        transition: 400ms;
+    }
+    @media only screen and (max-width: 414px) {
+        header {
+            padding: 10px; /* Reduz o espaçamento interno do cabeçalho */
+        }
+    
+        #menu ul {
+            display: flex; /* Altera a exibição dos itens do menu para flexível */
+            flex-direction: column; /* Altera a direção dos itens do menu para coluna */
+            align-items: center; /* Centraliza os itens do menu horizontalmente */
+        }
+    
+        #menu ul li {
+            display: block; /* Coloca os itens do menu em bloco */
+            margin: 10px 0; /* Adiciona espaçamento entre os itens do menu */
+        }
+    }
+}

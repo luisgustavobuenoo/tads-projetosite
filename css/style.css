@@ -115,6 +115,27 @@ body {
     background-repeat: no-repeat; /* Evita a repetição da imagem */
 }
 
+   /*regras para tamanhos de telas diferentes*/
+   @media(min-width: 428px) {
+    body {
+        background-image: url("https://cdn.pixabay.com/photo/2021/09/30/15/33/dystopia-6670405_1280.jpg");
+        background-size: cover; /* para cobrir todo o fundo */
+        background-position: center; /* para centralizar a imagem */
+        
+    }
+    #zumbies .grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #zumbies .coluna {
+        width: 35%; /* Ou outro valor, variar de acordo com o desejado  */
+        margin: 0 10px;
+}
+   }
+
+
 
 h2 {
     color: #ffffff;
@@ -177,35 +198,3 @@ body main {
     color: #ffffff;
 }
 
-
-/* media para responsividade do site  */
-
-@media only screen and (max-width: 414px) {
-
-    header {
-        /* cor de fundo */
-        background-color: #33333300;
-        /* lagura */
-        width: 30%;
-        /* sombra */
-        display: flex;
-        align-items: center;   
-        transition: 400ms;
-    }
-    @media only screen and (max-width: 414px) {
-        header {
-            padding: 10px; /* Reduz o espaçamento interno do cabeçalho */
-        }
-    
-        #menu ul {
-            display: flex; /* Altera a exibição dos itens do menu para flexível */
-            flex-direction: column; /* Altera a direção dos itens do menu para coluna */
-            align-items: center; /* Centraliza os itens do menu horizontalmente */
-        }
-    
-        #menu ul li {
-            display: block; /* Coloca os itens do menu em bloco */
-            margin: 10px 0; /* Adiciona espaçamento entre os itens do menu */
-        }
-    }
-}
